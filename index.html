@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>421 Club · Le jeu de dés du comptoir, dans ta poche</title>
+  <meta name="description" content="421 Club, c'est le jeu de dés de tous les comptoirs de France sur iPhone. En ligne, entre potes, contre Raymond ou avec tes vrais dés.">
+  <meta property="og:title" content="421 Club · Le comptoir en poche">
+  <meta property="og:description" content="Le jeu de dés de tous les comptoirs de France, sur iPhone. En ligne, entre potes, contre Raymond ou avec tes vrais dés.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/og-icone.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Host+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=5">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+  <!-- ============ EN-TÊTE ============ -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#top" class="brand" aria-label="421 Club, retour en haut">
+        <img src="assets/img/logo-421.webp" alt="" width="40" height="35">
+        <span>421 club</span>
+      </a>
+      <nav aria-label="Principale" class="nav-main">
+        <a href="#modes">Modes</a>
+        <a href="#raymond">Raymond</a>
+        <a href="#app">L'app</a>
+        <a href="#rangs">Rangs</a>
+      </nav>
+      <a href="#telecharger" class="btn btn-dark btn-sm header-cta">
+        Télécharger
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav aria-label="Mobile" class="nav-mobile" id="mobile-nav">
+      <a href="#modes">Modes</a>
+      <a href="#raymond">Raymond</a>
+      <a href="#app">L'app</a>
+      <a href="#rangs">Rangs</a>
+      <a href="#telecharger" class="btn btn-dark">Télécharger
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="top" class="hero">
+      <canvas class="ht hero-canvas" data-ht="hero" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <div class="hero-meta">
+          <p class="mono">Le jeu de dés du comptoir<br>Sur iPhone</p>
+          <p class="mono hero-status"><span class="dot-square"></span><span id="season-label">Saison en cours</span></p>
+        </div>
+        <div class="hero-bottom">
+          <h1 class="hero-title split">Le comptoir<br>en poche.</h1>
+          <div class="hero-side reveal">
+            <p class="lead">Le jeu de dés de tous les bars de France, dans ton téléphone. En ligne, entre potes, contre Raymond ou avec tes vrais dés. Et le perdant paie sa tournée.</p>
+            <div class="btn-row">
+              <a href="#telecharger" class="btn btn-dark">Télécharger
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+              </a>
+              <a href="#modes" class="btn btn-outline">Voir les modes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BANDEAU DÉS ============ -->
+    <section class="marquee-band" aria-label="La collection de dés">
+      <div class="container marquee-wrap">
+        <p class="mono marquee-label">25 dés à collectionner</p>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee-track">
+            <span class="die-chip"><img src="assets/img/des/de-ivoire.webp" alt="">Ivoire</span>
+            <span class="die-chip"><img src="assets/img/des/de-club-violet.webp" alt="">Club violet</span>
+            <span class="die-chip"><img src="assets/img/des/de-ebene.webp" alt="">Ébène</span>
+            <span class="die-chip"><img src="assets/img/des/de-or.webp" alt="">Or</span>
+            <span class="die-chip"><img src="assets/img/des/de-lilas.webp" alt="">Lilas</span>
+            <span class="die-chip"><img src="assets/img/des/de-emeraude.webp" alt="">Émeraude</span>
+            <span class="die-chip"><img src="assets/img/des/de-casino.webp" alt="">Casino</span>
+            <span class="die-chip"><img src="assets/img/des/de-royal-421.webp" alt="">Royal 421</span>
+            <span class="die-chip"><img src="assets/img/des/de-cristal.webp" alt="">Cristal</span>
+            <span class="die-chip"><img src="assets/img/des/de-marbre-noir.webp" alt="">Marbre noir</span>
+            <span class="die-chip"><img src="assets/img/des/de-cobalt.webp" alt="">Cobalt</span>
+            <span class="die-chip"><img src="assets/img/des/de-nacre-rosee.webp" alt="">Nacre rosée</span>
+            <span class="die-chip"><img src="assets/img/des/de-lettre-d-or.webp" alt="">Lettre d'or</span>
+            <span class="die-chip"><img src="assets/img/des/de-jade.webp" alt="">Jade</span>
+            <span class="die-chip"><img src="assets/img/des/de-raymond.webp" alt="">Raymond</span>
+            <span class="die-chip"><img src="assets/img/des/de-opale.webp" alt="">Opale</span>
+            <span class="die-chip"><img src="assets/img/des/de-amethyste.webp" alt="">Améthyste</span>
+            <span class="die-chip"><img src="assets/img/des/de-chrome.webp" alt="">Chrome</span>
+            <span class="die-chip"><img src="assets/img/des/de-or-rose.webp" alt="">Or rose</span>
+            <span class="die-chip"><img src="assets/img/des/de-perle-noire.webp" alt="">Perle noire</span>
+            <span class="die-chip"><img src="assets/img/des/de-fume.webp" alt="">Fumé</span>
+            <span class="die-chip"><img src="assets/img/des/de-marbre-blanc.webp" alt="">Marbre blanc</span>
+            <span class="die-chip"><img src="assets/img/des/de-canon-de-fusil.webp" alt="">Canon de fusil</span>
+            <span class="die-chip"><img src="assets/img/des/de-nacre-blanche.webp" alt="">Nacre blanche</span>
+            <span class="die-chip"><img src="assets/img/des/de-club-noir.webp" alt="">Club noir</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (01) LE CLUB ============ -->
+    <section id="club" class="section">
+      <div class="container">
+        <div class="club-grid">
+          <p class="eyebrow"><span class="dot-square"></span><span class="eyebrow-num">(01)</span> Le club</p>
+          <p class="club-text scrub" data-scrub>Le 421, c'est trois dés, un cornet et des règles que tout le monde croit connaître. 421 Club garde l'esprit du comptoir et s'occupe du reste&nbsp;: les jetons, la charge, la décharge et les comptes à la fin. Toi, tu n'as plus qu'à lancer.</p>
+        </div>
+        <div class="stats">
+          <div class="stat reveal">
+            <p class="mono stat-label">Modes de jeu</p>
+            <p class="stat-num" data-count="5">5</p>
+            <p class="stat-desc">De la partie rapide en ligne à la soirée à huit.</p>
+          </div>
+          <div class="stat reveal">
+            <p class="mono stat-label">Dés à collectionner</p>
+            <p class="stat-num" data-count="25">25</p>
+            <p class="stat-desc">De l'Ivoire classique au Royal 421.</p>
+          </div>
+          <div class="stat reveal">
+            <p class="mono stat-label">Tapis de jeu</p>
+            <p class="stat-num" data-count="30">30</p>
+            <p class="stat-desc">Du Bar Tabac au Bouchon lyonnais.</p>
+          </div>
+          <div class="stat reveal">
+            <p class="mono stat-label">Cartes défi et gage</p>
+            <p class="stat-num" data-count="150">150</p>
+            <p class="stat-desc">Pour pimenter chaque main en mode soirée.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (02) LES MODES ============ -->
+    <section id="modes" class="section section-border">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="dot-square"></span><span class="eyebrow-num">(02)</span> Les modes</p>
+            <h2 class="h2 split">Cinq façons de jouer, un seul cornet.</h2>
+          </div>
+          <p class="section-intro reveal">En ligne contre un inconnu, autour de la table avec tes potes, ou seul contre Raymond quand le bar est vide. Survole un mode pour voir l'écran de l'app.</p>
+        </div>
+
+        <div class="modes-grid">
+          <article class="mode-card reveal">
+            <div class="mode-art">
+              <span class="mono card-num">01</span>
+              <canvas class="ht" data-ht="dice" data-faces="4,2" aria-hidden="true"></canvas>
+              <img class="reveal-img" src="assets/img/modes/partie-rapide.webp" alt="La tuile Partie rapide dans l'app 421 Club" loading="lazy">
+            </div>
+            <div class="mode-body">
+              <h3 class="h3">Partie rapide</h3>
+              <p>Un contre un, cinq minutes chrono. On te trouve un adversaire en ligne, tu lances, et tu grimpes au classement de la saison.</p>
+              <ul class="tags"><li>En ligne</li><li>1 contre 1</li><li>5 min</li></ul>
+            </div>
+          </article>
+
+          <article class="mode-card reveal">
+            <div class="mode-art">
+              <span class="mono card-num">02</span>
+              <canvas class="ht" data-ht="avatars" data-srcs="assets/img/avatars/avatar-marc.webp,assets/img/avatars/avatar-karim.webp,assets/img/avatars/avatar-ines.webp" aria-hidden="true"></canvas>
+              <img class="reveal-img" src="assets/img/modes/entre-potes.webp" alt="La tuile Entre potes dans l'app 421 Club" loading="lazy">
+            </div>
+            <div class="mode-body">
+              <h3 class="h3">Entre potes</h3>
+              <p>Un seul téléphone qui tourne autour de la table, ou une table privée avec un code. Chacun joue à son tour, l'écran se masque entre deux joueurs.</p>
+              <ul class="tags"><li>2 à 6 joueurs</li><li>Sans compte</li><li>Gratuit</li></ul>
+            </div>
+          </article>
+
+          <article class="mode-card reveal">
+            <div class="mode-art">
+              <span class="mono card-num">03</span>
+              <canvas class="ht" data-ht="image" data-src="assets/img/raymond/raymond-lance.webp" data-bob="1" aria-hidden="true"></canvas>
+              <img class="reveal-img" src="assets/img/modes/express.webp" alt="La tuile Express contre Raymond dans l'app 421 Club" loading="lazy">
+            </div>
+            <div class="mode-body">
+              <h3 class="h3">Express contre Raymond</h3>
+              <p>Mains courtes, à la chaîne. Pas de pot&nbsp;: chaque main gagnée te permet de refiler des jetons. Le premier à tout refiler a gagné.</p>
+              <ul class="tags"><li>Solo</li><li>Hors ligne</li><li>3 min</li></ul>
+            </div>
+          </article>
+
+          <article class="mode-card reveal">
+            <div class="mode-art">
+              <span class="mono card-num">04</span>
+              <canvas class="ht" data-ht="tally" aria-hidden="true"></canvas>
+              <img class="reveal-img" src="assets/img/modes/compteur.webp" alt="La tuile Compteur dans l'app 421 Club" loading="lazy">
+            </div>
+            <div class="mode-body">
+              <h3 class="h3">Compteur</h3>
+              <p>Tu joues avec tes vrais dés, l'app tient les comptes. Note la combinaison de chaque joueur en deux taps&nbsp;: charge, décharge, jetons et stats.</p>
+              <ul class="tags"><li>2 à 8 joueurs</li><li>Vrais dés</li><li>Gratuit</li></ul>
+            </div>
+          </article>
+
+          <article class="mode-card mode-card-wide reveal">
+            <div class="mode-art">
+              <span class="mono card-num">05</span>
+              <canvas class="ht" data-ht="cards" aria-hidden="true"></canvas>
+              <img class="reveal-img" src="assets/img/modes/mode-soiree.webp" alt="La tuile Mode soirée dans l'app 421 Club" loading="lazy">
+            </div>
+            <div class="mode-body">
+              <p class="mono badge-new">Défis et gages entre amis</p>
+              <h3 class="h3">Mode soirée</h3>
+              <p>Entre chaque main, une carte se retourne&nbsp;: gage, défi ou règle spéciale. Le perdant de la main relève le défi, sous les yeux de tous.</p>
+              <ul class="tags"><li>3 à 8 joueurs</li><li>150 cartes</li><li>Un téléphone</li></ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (03) DANS L'APP ============ -->
+    <section id="app" class="section section-border">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="dot-square"></span><span class="eyebrow-num">(03)</span> Dans l'app</p>
+            <h2 class="h2 split">Une collection, des badges, une vraie table.</h2>
+          </div>
+          <div class="section-intro reveal">
+            <p>Débloque des dés et des tapis, décroche des badges, grimpe au classement de la saison et lance sur le tapis vert. <span class="hover-hint">Survole</span><span class="touch-hint">Fais défiler</span> un écran pour voir l'app derrière les points.</p>
+            <a href="#telecharger" class="link-arrow mono">Télécharger l'app
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="work-grid">
+          <article class="work-card work-a reveal">
+            <div class="work-art">
+              <span class="mono card-num">Collection</span>
+              <canvas class="ht" data-ht="screens" data-srcs="assets/img/ecrans/mes-des.webp,assets/img/ecrans/tapis.webp" aria-hidden="true"></canvas>
+              <div class="reveal-screens">
+                <img src="assets/img/ecrans/mes-des.webp" alt="Écran Mes dés : le dé Ivoire, famille Classique" loading="lazy">
+                <img src="assets/img/ecrans/tapis.webp" alt="Écran Tapis : le tapis Bar Tabac, collection Bars cultes" loading="lazy">
+              </div>
+            </div>
+            <div class="work-meta">
+              <div>
+                <p class="mono work-cat">Collection <span>/</span> Dés et tapis</p>
+                <h3 class="h3 work-title">Des dés et des tapis qui se méritent, de l'Ivoire au Bar Tabac</h3>
+              </div>
+              <div class="work-metric"><p class="metric">25</p><p class="mono">Dés</p></div>
+            </div>
+            <ul class="tags"><li>30 tapis</li><li>Bars cultes</li><li>Jetons</li></ul>
+          </article>
+
+          <article class="work-card work-b reveal">
+            <div class="work-art">
+              <span class="mono card-num">Badges</span>
+              <canvas class="ht" data-ht="screens" data-srcs="assets/img/ecrans/badges.webp" aria-hidden="true"></canvas>
+              <div class="reveal-screens">
+                <img src="assets/img/ecrans/badges.webp" alt="Écran Badges : prochain badge Première victoire, synchronisé avec Game Center" loading="lazy">
+              </div>
+            </div>
+            <div class="work-meta">
+              <div>
+                <p class="mono work-cat">Succès <span>/</span> Game Center</p>
+                <h3 class="h3 work-title">Onze badges, du premier 421 aux trois as</h3>
+              </div>
+              <div class="work-metric"><p class="metric">11</p><p class="mono">Badges</p></div>
+            </div>
+            <ul class="tags"><li>Premier 421</li><li>Trois as</li><li>Sans nénette</li></ul>
+          </article>
+
+          <article class="work-card work-c reveal">
+            <div class="work-art">
+              <span class="mono card-num">Classement</span>
+              <canvas class="ht" data-ht="screens" data-srcs="assets/img/ecrans/classement.webp" aria-hidden="true"></canvas>
+              <div class="reveal-screens">
+                <img src="assets/img/ecrans/classement.webp" alt="Écran Classement : rang Habitué, 1000 points, classements Potes, France et Monde" loading="lazy">
+              </div>
+            </div>
+            <div class="work-meta">
+              <div>
+                <p class="mono work-cat">Saison <span>/</span> Game Center</p>
+                <h3 class="h3 work-title">Ta place chez les potes, en France et dans le monde</h3>
+              </div>
+              <div class="work-metric"><p class="metric">3</p><p class="mono">Classements</p></div>
+            </div>
+            <ul class="tags"><li>Potes</li><li>France</li><li>Monde</li></ul>
+          </article>
+
+          <article class="work-card work-d reveal">
+            <div class="work-art">
+              <span class="mono card-num">La table</span>
+              <canvas class="ht" data-ht="screens" data-srcs="assets/img/ecrans/table-de-jeu.webp,assets/img/ecrans/lancer.webp" aria-hidden="true"></canvas>
+              <div class="reveal-screens">
+                <img src="assets/img/ecrans/table-de-jeu.webp" alt="Écran de jeu : trois dés sur le tapis vert, premier lancer contre Raymond" loading="lazy">
+                <img src="assets/img/ecrans/lancer.webp" alt="Écran de jeu : deuxième lancer, glisse pour relancer" loading="lazy">
+              </div>
+            </div>
+            <div class="work-meta">
+              <div>
+                <p class="mono work-cat">En jeu <span>/</span> Tapis vert</p>
+                <h3 class="h3 work-title">Glisse pour lancer, ou secoue ton téléphone</h3>
+              </div>
+              <div class="work-metric"><p class="metric">3</p><p class="mono">Lancers par main</p></div>
+            </div>
+            <ul class="tags"><li>Secouer pour lancer</li><li>Sons et vibrations</li><li>Mode table</li></ul>
+          </article>
+        </div>
+
+        <div class="badges-strip">
+          <p class="mono badges-label"><span class="dot-square"></span>11 badges à décrocher</p>
+          <ul class="badges-list">
+            <li class="reveal"><img src="assets/img/badges/premiere-victoire.webp" alt="" loading="lazy"><span class="mono">Première victoire</span></li>
+            <li class="reveal"><img src="assets/img/badges/premier-421.webp" alt="" loading="lazy"><span class="mono">Premier 421</span></li>
+            <li class="reveal"><img src="assets/img/badges/421-decharge.webp" alt="" loading="lazy"><span class="mono">421 déchargé</span></li>
+            <li class="reveal"><img src="assets/img/badges/sans-nenette.webp" alt="" loading="lazy"><span class="mono">Sans nénette</span></li>
+            <li class="reveal"><img src="assets/img/badges/trois-as.webp" alt="" loading="lazy"><span class="mono">Trois as</span></li>
+            <li class="reveal"><img src="assets/img/badges/serie-3.webp" alt="" loading="lazy"><span class="mono">Série de 3</span></li>
+            <li class="reveal"><img src="assets/img/badges/parties-10.webp" alt="" loading="lazy"><span class="mono">10 parties</span></li>
+            <li class="reveal"><img src="assets/img/badges/parties-50.webp" alt="" loading="lazy"><span class="mono">50 parties</span></li>
+            <li class="reveal"><img src="assets/img/badges/raymond-redoutable.webp" alt="" loading="lazy"><span class="mono">Raymond redoutable</span></li>
+            <li class="reveal"><img src="assets/img/badges/express.webp" alt="" loading="lazy"><span class="mono">Express</span></li>
+            <li class="reveal"><img src="assets/img/badges/defis-7.webp" alt="" loading="lazy"><span class="mono">7 défis</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RAYMOND ============ -->
+    <section id="raymond" class="section quote-section" aria-label="Raymond, le cornet du comptoir">
+      <div class="container quote-grid">
+        <div class="quote-art reveal">
+          <canvas class="ht" data-ht="cycle" data-srcs="assets/img/raymond/raymond-neutre.webp,assets/img/raymond/raymond-lance.webp,assets/img/raymond/raymond-content.webp,assets/img/raymond/raymond-triste.webp" aria-hidden="true"></canvas>
+          <img class="reveal-img" src="assets/img/raymond/raymond-content.webp" alt="Raymond, la mascotte de 421 Club : un cornet à dés violet à moustache" loading="lazy">
+        </div>
+        <div class="quote-body">
+          <p class="quote-mark" aria-hidden="true">“</p>
+          <blockquote class="quote-text reveal">
+            Je ne dors jamais, je ne quitte jamais le comptoir, et je sais quand garder un 4 ou un 2. Allez, lance. Je t'attends.
+          </blockquote>
+          <div class="quote-author reveal">
+            <span class="dot-square"></span>
+            <span class="quote-name">Raymond</span>
+            <span class="mono">Le cornet du comptoir</span>
+          </div>
+          <ul class="levels reveal" aria-label="Niveaux de Raymond">
+            <li><span class="mono">Tranquille</span><span class="lvl-pts">+2</span></li>
+            <li class="is-active"><span class="mono">Malin</span><span class="lvl-pts">+4</span></li>
+            <li><span class="mono">Redoutable</span><span class="lvl-pts">+8</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (04) LES RANGS ============ -->
+    <section id="rangs" class="section section-border">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow"><span class="dot-square"></span><span class="eyebrow-num">(04)</span> Les rangs</p>
+            <h2 class="h2 split">Ta carrière au comptoir, d'Apprenti à Légende.</h2>
+          </div>
+          <p class="section-intro reveal">Chaque partie te rapporte des points. Assez pour passer d'Habitué à Pilier de comptoir et, un jour peut-être, entrer dans la légende.</p>
+        </div>
+
+        <div class="timeline" data-timeline>
+          <div class="timeline-line"><span class="timeline-fill"></span></div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step-node"></span>
+              <div class="step-top mono"><span>01</span><span class="accent">Dé blanc</span></div>
+              <img class="step-img" src="assets/img/rangs/rang-1.webp" alt="" loading="lazy">
+              <h3 class="h3">Apprenti</h3>
+              <p>Tu découvres le cornet. Tout le monde est passé par là, même Raymond.</p>
+            </li>
+            <li class="step">
+              <span class="step-node"></span>
+              <div class="step-top mono"><span>02</span><span class="accent">Dé cuivre</span></div>
+              <img class="step-img" src="assets/img/rangs/rang-2.webp" alt="" loading="lazy">
+              <h3 class="h3">Habitué</h3>
+              <p>On commence à connaître ta tête. Ton café arrive sans que tu le demandes.</p>
+            </li>
+            <li class="step">
+              <span class="step-node"></span>
+              <div class="step-top mono"><span>03</span><span class="accent">Dé violet</span></div>
+              <img class="step-img" src="assets/img/rangs/rang-3.webp" alt="" loading="lazy">
+              <h3 class="h3">Pilier de comptoir</h3>
+              <p>Tu as ton tabouret attitré et tu connais les règles mieux que le patron.</p>
+            </li>
+            <li class="step">
+              <span class="step-node"></span>
+              <div class="step-top mono"><span>04</span><span class="accent">Dé or</span></div>
+              <img class="step-img" src="assets/img/rangs/rang-4.webp" alt="" loading="lazy">
+              <h3 class="h3">Patron</h3>
+              <p>C'est toi qui fixes les règles de la maison. Et qui offres la tournée, parfois.</p>
+            </li>
+            <li class="step">
+              <span class="step-node"></span>
+              <div class="step-top mono"><span>05</span><span class="accent">Dé noir et or</span></div>
+              <img class="step-img" src="assets/img/rangs/rang-5.webp" alt="" loading="lazy">
+              <h3 class="h3">Légende du 421</h3>
+              <p>On raconte encore tes décharges au comptoir. Ton nom est sur l'ardoise.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ (05) TÉLÉCHARGER ============ -->
+    <section id="telecharger" class="section section-border">
+      <div class="container contact-grid">
+        <div class="contact-left">
+          <p class="eyebrow"><span class="dot-square"></span><span class="eyebrow-num">(05)</span> Télécharger</p>
+          <h2 class="h2-xl split">À toi de lancer.</h2>
+          <p class="lead reveal">Télécharge 421 Club sur ton iPhone, invite tes potes à ta table et va défier Raymond. La première partie, c'est maintenant.</p>
+
+          <!-- TODO : remplacer href="#" par le lien App Store de l'app -->
+          <a href="#" class="appstore reveal" aria-label="Télécharger dans l'App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="apple"><path d="M16.37 12.6c-.02-2.18 1.78-3.23 1.86-3.28-1.01-1.48-2.59-1.69-3.15-1.71-1.34-.14-2.62.79-3.3.79-.68 0-1.73-.77-2.84-.75-1.46.02-2.81.85-3.56 2.16-1.52 2.63-.39 6.53 1.09 8.67.72 1.05 1.58 2.22 2.71 2.18 1.09-.04 1.5-.7 2.81-.7 1.31 0 1.68.7 2.83.68 1.17-.02 1.91-1.07 2.62-2.12.83-1.21 1.17-2.39 1.19-2.45-.03-.01-2.28-.88-2.3-3.47zM14.21 6.19c.6-.73 1-1.73.89-2.74-.86.03-1.91.58-2.53 1.3-.55.64-1.04 1.67-.91 2.65.96.07 1.95-.49 2.55-1.21z"/></svg>
+            <span><small>Télécharger dans</small>l'App Store</span>
+          </a>
+
+          <ul class="contact-list reveal">
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"/><circle cx="9" cy="9" r="1.2" class="fill"/><circle cx="15" cy="15" r="1.2" class="fill"/></svg>
+              <span>Sur iPhone, en français</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="14" r="5.5"/><path d="M8.5 9.5L6 3h4l2 4 2-4h4l-2.5 6.5"/></svg>
+              <span>Badges et classements avec Game Center</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+              <!-- TODO : remplacer par ta vraie adresse de contact -->
+              <a href="mailto:contact@421club.app">contact@421club.app</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq reveal">
+          <p class="mono faq-label">Questions fréquentes</p>
+          <details>
+            <summary>C'est quoi, le 421&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <p>Le jeu de dés des comptoirs français. Chacun lance trois dés, jusqu'à trois fois, pour sortir la meilleure combinaison. La meilleure de toutes&nbsp;: 4, 2, 1. La pire&nbsp;: la nénette, 2, 2, 1. Chaque main perdue te fait ramasser des jetons, et le dernier à ne pas s'en débarrasser a perdu.</p>
+          </details>
+          <details>
+            <summary>Je peux jouer avec mes vrais dés&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <p>Oui, c'est le mode Compteur. Vous lancez sur la table, l'app note la combinaison de chacun en deux taps et gère la charge, la décharge, les jetons et les stats.</p>
+          </details>
+          <details>
+            <summary>À combien peut-on jouer&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <p>Un contre un en partie rapide, de 2 à 6 entre potes, de 2 à 8 au Compteur et de 3 à 8 en mode soirée. Et seul contre Raymond en Express.</p>
+          </details>
+          <details>
+            <summary>Faut-il une connexion&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <p>Pas toujours. Express contre Raymond se joue hors ligne, et Entre potes peut tourner sur un seul téléphone. La partie rapide, elle, se joue en ligne.</p>
+          </details>
+          <details>
+            <summary>Comment marchent les badges et le classement&nbsp;?<span class="plus" aria-hidden="true"></span></summary>
+            <p>Ils passent par Game Center. Connecte-toi pour voir ta place chez tes potes, en France et dans le monde, et pour garder tes badges d'un appareil à l'autre.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ PIED DE PAGE ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#top" class="brand" aria-label="421 Club, retour en haut">
+            <img src="assets/img/logo-421.webp" alt="" width="40" height="35">
+            <span>421 club</span>
+          </a>
+          <p>Le jeu de dés du comptoir, dans ta poche.</p>
+        </div>
+        <nav aria-label="Pied de page" class="footer-nav">
+          <p class="mono">Le jeu</p>
+          <a href="#modes">Modes</a>
+          <a href="#raymond">Raymond</a>
+          <a href="#app">L'app</a>
+          <a href="#rangs">Rangs</a>
+        </nav>
+        <nav aria-label="Informations" class="footer-nav">
+          <p class="mono">Infos</p>
+          <!-- TODO : relier aux vraies pages -->
+          <a href="#">Confidentialité</a>
+          <a href="#">Mentions légales</a>
+          <a href="#telecharger">Télécharger</a>
+        </nav>
+        <div class="footer-nav">
+          <p class="mono">Écris-nous</p>
+          <a href="mailto:contact@421club.app">contact@421club.app</a>
+        </div>
+      </div>
+      <div class="footer-mark">
+        <canvas class="ht" data-ht="text" data-text="421 club" aria-hidden="true"></canvas>
+      </div>
+      <div class="footer-bottom mono">
+        <p>© <span id="year">2026</span> 421 Club</p>
+        <p>Lancé depuis le comptoir</p>
+        <a href="#top" class="to-top">Haut de page ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=5"></script>
+</body>
+</html>
